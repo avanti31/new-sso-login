@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+=======
+
+/* *{
+  background-color: '#f5f5f5'
+} */
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+>>>>>>> d23d7cbe1489e0e4be3035c2928887ae0d33ea1e
