@@ -1,15 +1,21 @@
+import { useContext } from "react";
+import { useRouter } from "next/router";
+import { useForm } from "react-hook-form";
 
+import { AuthContext } from "../context/auth";
+import fetcher from "../api/fetcher";
 export default function Home() {
+  
   return (
-  <div className="bg-grey-800">
-    <div className="text-center "> 
-      <h1 className="text-3xl font-bold text-gray-700 dark:text-white mt-5 mb-5">Login</h1> 
-      <div className="w-2/3 py-6 px-4 lg:w-2/5 border-b-4 mx-auto overflow-hidden bg-white rounded-lg  dark:bg-gray-500">
-        <div className="pb-4 border-b-4 border-red-400">
-         <h2 className="text-1xl font-bold text-left text-gray-700 dark:text-white">Employee</h2>
+  
+    <div className="bg-gray-200 w-full py-14 pb-20"> 
+      <h1 className="text-3xl text-center text-gray-700 dark:text-white mb-5">Login</h1> 
+      <div className="w-2/3 py-6 px-4 lg:w-2/5 border-b-4 mx-auto overflow-hidden bg-white">
+        <div className="pb-4 w-1/2 border-b-4 border-red-400">
+         <h2 className="text-1xl text-center py-2 text-gray-800 dark:text-white">Employee</h2>
         </div>
         
-              <p className="mt-2 text-sm text-gray-500 text-center">You can login to all your IIFL applications through this common login page, using your IWIN credentials.</p>
+              <p className="mt-4 text-sm pt-2 text-gray-800 text-center">You can login to all your IIFL applications through this common login page, using your IWIN credentials.</p>
   
          <form>
             <div className="w-full mt-8">
@@ -23,7 +29,7 @@ export default function Home() {
          </form>
        </div>
       </div>
-   </div>
+   
   
   
   )

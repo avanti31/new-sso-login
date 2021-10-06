@@ -1,21 +1,34 @@
 import { LoginNav } from "../components/LoginNav";
 import { Sidebar } from "../components/sidebar";
 import { LoginFooter } from "../components/Footer";
+import { useRouter } from "next/router";
+import { AuthProvider } from "../context/auth";
+import { PortalProvider } from "../context/portal";
+import {Nav} from "../components/Nav";
 import "../styles/globals.css";
 
+
 function MyApp({ Component, pageProps }) {
+
+  const router = useRouter();
   return (
-    <>
-      <LoginNav />
-      <div className="relative min-h-screen md:flex">
-        <Sidebar />
-        <div className="flex-1  p-10 text-2xl font-bold">
+    
+      <AuthProvider>
+        <PortalProvider>
+        {router.pathname !== "/" ? <Nav/> : <LoginNav />}
+        <div className="relative flex justify-center">
+        {router.pathname === "/" ? null : <Sidebar/>}
+          <div className="w-full m-auto">
           <Component {...pageProps} />
-        </div>
-      </div>
-      <LoginFooter />
-    </>
+          </div>
+          </div>
+          {router.pathname === "/" ? <LoginFooter/> : null}
+      
+        </PortalProvider>
+      </AuthProvider>
+    
   );
 }
+ 
 
 export default MyApp;
