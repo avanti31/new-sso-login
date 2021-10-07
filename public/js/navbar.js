@@ -8,7 +8,8 @@ const dropdown = document.querySelector(".dropdown");
 btn.addEventListener("click", () => {
   sidebar.classList.toggle("-translate-x-full");
 });
-
-hamburger.addEventListener("click", () => {
-  dropdown.classList.toggle("hidden");
-});
+// // console.log("hamburger",hamburger)
+// hamburger.addEventListener("click", () => {
+//   // alert("inside function")
+//   dropdown.classList.toggle("hidden");
+// });
