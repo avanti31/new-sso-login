@@ -1,34 +1,34 @@
 export const Sidebar = () => {
   return (
-    <div className="sidebar bg-blue-500 text-blue-100 w-1/2 space-y-6 py-7 px-2 absolute inset-y-0 left-0     transform md:translate-x-translate-x-full-0 transition duration-200 ease-in-out sm:visible  lg:hidden md:hidden">
-      <a href="#" className="text-white flex items-center space-x-2 px-4">
+    <div className="sidebar bg-white  text-blue-100 w-1/2 space-y-6 py-7 px-2 absolute inset-y-0 left-0     transform md:translate-x-translate-x-full-0 transition duration-200 ease-in-out sm:visible  lg:hidden md:hidden -translate-x-full">
+      <a href="#" className="text-black flex items-center space-x-2 px-4">
         <h1>Header</h1>
       </a>
 
       <nav>
         <a
           href="#"
-          className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white"
+          className="block py-2.5 px-4 text-black  rounded transition duration-200 hover:bg-blue-700 border-gray-100  "
         >
-          Home
+          My Policies
         </a>
         <a
           href=""
-          className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white"
+          className="block py-2.5 px-4 text-black rounded transition duration-200 hover:bg-blue-700  hover:text-white border-gray-100  "
         >
-          About
+          MyProfile
         </a>
         <a
           href=""
-          className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white"
+          className="block text-black py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700  border-gray-100 "
         >
-          Features
+          Reports
         </a>
         <a
           href=""
-          className="block py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 hover:text-white"
+          className="block text-black py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 border-gray-100  "
         >
-          Pricing
+          Supports
         </a>
       </nav>
     </div>
