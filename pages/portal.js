@@ -27,7 +27,7 @@ const Portal = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div className=" container mx-auto w-full mt-8">
+    <div className="container mx-auto w-full mt-20">
       <NavSearchBar />
       <div className=" w-full m-auto px-4 py-12 h-200 w-220  flex grid lg:grid-cols-5  grid-cols-2  md:grid-cols-3  lg:gap-10 gap-4 ">
         {data &&
@@ -47,7 +47,10 @@ const Portal = () => {
                   />
 
                   <div className="pb-10 py-5 text-center">
-                    <a href="#" className="font-poppins text-16 tracking-normal text-gray block text-gray-500 dark:text-white">
+                    <a
+                      href="#"
+                      className="font-poppins text-16 tracking-normal text-gray block text-gray-500 dark:text-white"
+                    >
                       <span className="text-md text-gray-700 dark:text-gray-200">
                         {item.appName}
                       </span>

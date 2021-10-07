@@ -14,12 +14,12 @@ function MyApp({ Component, pageProps }) {
       <PortalProvider>
         {router.pathname !== "/" ? <Nav /> : <LoginNav />}
         {router.pathname === "/" ? null : <Sidebar />}
-        <div className="relative flex justify-center mt-20 ">
+        <div className="relative flex justify-center  ">
           <div className="w-full m-auto">
             <Component {...pageProps} />
           </div>
         </div>
-        <div className="modal  block  w-full h-screen    top-0 left-0 right-0 bg-black-300 bg-red "></div>
+        <div className="modal  absolute  w-full h-screen    top-0 left-0 right-0 bg-black-300 bg-red "></div>
         {router.pathname === "/" ? <LoginFooter /> : null}
       </PortalProvider>
     </AuthProvider>
