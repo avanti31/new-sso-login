@@ -1,13 +1,18 @@
 import { MenuAlt2Icon } from "@heroicons/react/solid";
 export const Nav = () => {
   return (
-    <nav className="bg-blue-900 text-gray-100 flex justify-between px-4 position-fixed	w-full ">
+    <nav className="bg-blue-900 text-gray-100 flex justify-between px-4 fixed	w-full top-0 z-20 ">
       <button className="mobile-menu-button flex m-auto focus:outline-none focus:bg-transparent sm:visible md:hidden lg:hidden">
         <MenuAlt2Icon className="text-sm w-8" />
       </button>
 
       <a href="#" className="flex p-6 px-16 text-white font-bold  ">
-        <img  className="py-2 h-12 w-16 object-contain"src="/img/logo.png" alt="logo" className="h-12  m-auto " />
+        <img
+          className="py-2 h-12 w-16 object-contain"
+          src="/img/logo.png"
+          alt="logo"
+          className="h-12  m-auto "
+        />
       </a>
 
       {/* hidden md:hidden lg:hidden  */}

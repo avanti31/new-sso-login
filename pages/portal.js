@@ -30,8 +30,8 @@ const Portal = () => {
     <div className=" container mx-auto w-full mt-8">
       <NavSearchBar />
       <div className=" w-full m-auto px-4 py-12 h-200 w-220  flex grid lg:grid-cols-5  grid-cols-2  md:grid-cols-3  lg:gap-10 gap-4 ">
-        {portal &&
-          portal.map((item) => {
+        {data &&
+          data.map((item) => {
             return (
               <a
                 href={`${item.redirectUrl}`}
