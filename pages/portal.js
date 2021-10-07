@@ -46,8 +46,8 @@ const Portal = () => {
                     alt="avatar"
                   />
 
-                  <div className="py-5 text-center">
-                    <a href="#" className="block text-gray-500 dark:text-white">
+                  <div className="pb-10 py-5 text-center">
+                    <a href="#" className="font-poppins text-16 tracking-normal text-gray block text-gray-500 dark:text-white">
                       <span className="text-md text-gray-700 dark:text-gray-200">
                         {item.appName}
                       </span>

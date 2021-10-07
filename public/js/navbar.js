@@ -11,7 +11,8 @@ btn.addEventListener("click", () => {
   modal.classList.toggle("hidden");
   sidebar.classList.toggle("-translate-x-full");
 });
-
-hamburger.addEventListener("click", () => {
-  dropdown.classList.toggle("hidden");
-});
+// // console.log("hamburger",hamburger)
+// hamburger.addEventListener("click", () => {
+//   // alert("inside function")
+//   dropdown.classList.toggle("hidden");
+// });

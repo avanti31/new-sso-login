@@ -9,6 +9,12 @@ module.exports = {
       height: {
         '200': '200px',
        },
+       fontSize: {
+         '16':'16px'
+       },
+       textColor:{
+         'gray':'#83838B'
+       }
        
    }
  },
