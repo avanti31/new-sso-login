@@ -1,25 +1,13 @@
+import { MenuAlt2Icon } from "@heroicons/react/solid";
 export const Nav = () => {
   return (
-    <div className="bg-blue-900 text-gray-100 flex justify-between px-4  ">
-      <button className="mobile-menu-button focus:outline-none focus:bg-gray-700 sm:visible md:hidden lg:hidden">
-        <svg
-          className="h-5 w-5"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+    <nav className="bg-blue-900 text-gray-100 flex justify-between px-4 position-fixed	w-full ">
+      <button className="mobile-menu-button flex m-auto focus:outline-none focus:bg-transparent sm:visible md:hidden lg:hidden">
+        <MenuAlt2Icon className="text-sm w-8" />
       </button>
 
       <a href="#" className="flex  p-6 px-16 text-white font-bold  ">
-        <img src="/img/logo.png" alt="logo" className="h-12  sm:m-auto " />
+        <img src="/img/logo.png" alt="logo" className="h-12  m-auto " />
       </a>
       {/* 
       <div className="m-auto mr-8 sm:hidden md:hidden lg:hidden  ">
@@ -63,6 +51,6 @@ export const Nav = () => {
         </div>
       </div>
      */}
-    </div>
+    </nav>
   );
 };
