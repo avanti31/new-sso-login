@@ -13,7 +13,7 @@ export const data = [
   },
   {
     appId: "3",
-    appName: "Abhis",
+    appName: "Ahis",
     icon: "/img/3.png",
     redirectUrl: "/",
   },
@@ -25,13 +25,13 @@ export const data = [
   },
   {
     appId: "5",
-    appName: "Abhis",
+    appName: "Bbhis",
     icon: "/img/5.png",
     redirectUrl: "/",
   },
   {
     appId: "6",
-    appName: "Abhis",
+    appName: "Dbhis",
     icon: "/img/6.png",
     redirectUrl: "/",
   },

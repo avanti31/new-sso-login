@@ -29,7 +29,7 @@ const Portal = () => {
   return (
     <div className=" container mx-auto w-full mt-8">
       <NavSearchBar />
-      <div className=" w-full py-8 w-50 flex grid lg:grid-cols-5  sm:grid-cols-2  md:grid-cols-3  gap-4">
+      <div className=" w-full py-8 w-50 flex grid  grid-cols-2  sm:grid-cols-2 lg:grid-cols-5   md:grid-cols-3  gap-2">
         {data &&
           data.map((item) => {
             return (
@@ -39,7 +39,7 @@ const Portal = () => {
                 rel="noreferrer"
                 key={`app-${item.appId}`}
               >
-                <div className="mx-auto px-4 w-4/5 h-full overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                <div className="mx-auto px-4  w-4/5 md:w-4/5 lg:w-4/5  h-[200px] overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                   <img
                     className="m-auto object-contain"
                     src={item.icon}
