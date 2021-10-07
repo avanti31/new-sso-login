@@ -1,7 +1,10 @@
 import { data } from "../data/data";
+import { NavSearchBar } from "../components/NavSearch";
+
 const Portal = () => {
   return (
     <div className="px-4 w-full py-4">
+      <NavSearchBar/>
       <div class="grid lg:grid-cols-5  sm:grid-cols-2  md:grid-cols-3  gap-4">
         {data.map((item) => {
           return (
