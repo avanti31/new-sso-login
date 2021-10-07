@@ -42,7 +42,7 @@ export const Nav = () => {
   return (
     <nav className="bg-blue-900 text-gray-100 flex justify-between px-4 fixed	w-full top-0 z-20 ">
       <button className="mobile-menu-button flex m-auto focus:outline-none focus:bg-transparent sm:visible md:hidden lg:hidden">
-        <MenuAlt2Icon className="text-sm w-8" />
+        <MenuAlt2Icon className="text-sm text-white w-8" />
       </button>
 
       <a href="#" className="flex p-6 px-16 text-white font-bold  ">

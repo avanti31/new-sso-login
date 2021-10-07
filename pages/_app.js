@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }) {
     <AuthProvider>
       <PortalProvider>
         {router.pathname !== "/" ? <Nav /> : <LoginNav />}
-        <div className="relative flex justify-center ">
-          {router.pathname === "/" ? null : <Sidebar />}
+        {router.pathname === "/" ? null : <Sidebar />}
+        <div className="relative flex justify-center mt-20 ">
           <div className="w-full m-auto">
             <Component {...pageProps} />
           </div>
