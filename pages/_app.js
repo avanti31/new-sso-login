@@ -7,6 +7,7 @@ import { PortalProvider } from "../context/portal";
 import { Nav } from "../components/Nav";
 import "../styles/globals.css";
 
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (

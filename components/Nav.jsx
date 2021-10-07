@@ -6,8 +6,8 @@ export const Nav = () => {
         <MenuAlt2Icon className="text-sm w-8" />
       </button>
 
-      <a href="#" className="flex  p-6 px-16 text-white font-bold  ">
-        <img src="/img/logo.png" alt="logo" className="h-12  m-auto " />
+      <a href="#" className="flex p-6 px-16 text-white font-bold  ">
+        <img  className="py-2 h-12 w-16 object-contain"src="/img/logo.png" alt="logo" className="h-12  m-auto " />
       </a>
       {/* 
       <div className="m-auto mr-8 sm:hidden md:hidden lg:hidden  ">
