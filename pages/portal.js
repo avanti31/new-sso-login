@@ -29,9 +29,9 @@ const Portal = () => {
   return (
     <div className=" container mx-auto w-full mt-8">
       <NavSearchBar />
-      <div className=" w-full py-8 w-50 flex grid  grid-cols-2  sm:grid-cols-2 lg:grid-cols-5   md:grid-cols-3  gap-2">
-        {data &&
-          data.map((item) => {
+      <div className=" w-full m-auto px-4 py-12 h-200 w-220  flex grid lg:grid-cols-5  grid-cols-2  md:grid-cols-3  lg:gap-10 gap-4 ">
+        {portal &&
+          portal.map((item) => {
             return (
               <a
                 href={`${item.redirectUrl}`}
@@ -39,15 +39,15 @@ const Portal = () => {
                 rel="noreferrer"
                 key={`app-${item.appId}`}
               >
-                <div className="mx-auto px-4  w-4/5 md:w-4/5 lg:w-4/5  h-[200px] overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+                <div className="mx-auto px-4 h-full overflow-hidden bg-white rounded-lg lg:shadow-xl shadow-xl dark:bg-gray-800">
                   <img
-                    className="m-auto object-contain"
+                    className="m-auto object-contain h-3/5 w-3/4"
                     src={item.icon}
                     alt="avatar"
                   />
 
                   <div className="py-5 text-center">
-                    <a href="#" className="block text-gray-800 dark:text-white">
+                    <a href="#" className="block text-gray-500 dark:text-white">
                       <span className="text-md text-gray-700 dark:text-gray-200">
                         {item.appName}
                       </span>
