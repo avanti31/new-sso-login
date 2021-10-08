@@ -8,7 +8,6 @@ const dropdown = document.querySelector(".dropdown");
 
 // add our event listener for the click
 btn.addEventListener("click", () => {
-  modal.classList.toggle("hidden");
   sidebar.classList.toggle("-translate-x-full");
 });
 // // console.log("hamburger",hamburger)

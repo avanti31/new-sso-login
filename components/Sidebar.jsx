@@ -1,9 +1,13 @@
 export const Sidebar = () => {
   return (
-    <div className="sidebar bg-white  text-blue-100 w-3/5 space-y-6 py-7 px-2 fixed inset-y-0 z-40 left-0  left-0    transform md:translate-x-translate-x-full-0 transition duration-200 ease-in-out sm:visible  lg:hidden md:hidden -translate-x-full">
-      <a href="#" className="text-black flex items-center space-x-2 px-4">
-        <h1>Header</h1>
-      </a>
+    <div className="sidebar bg-white  text-blue-100 w-3/5 space-y-6   fixed inset-y-0 z-40 left-0  left-0    transform md:translate-x-translate-x-full-0 transition duration-200 ease-in-out sm:visible  lg:hidden md:hidden -translate-x-full">
+      <div className="bg-blue-900 block text-gray-600    py-6">
+        <h4 className="px-2 tex-sm">Welcome Rahul</h4>
+
+        <h4 className="px-2 text-white text-md">
+          POSP ID : <span>1234 / AB / 123 </span>
+        </h4>
+      </div>
 
       <nav className="h-screen bg-white z-30">
         <a

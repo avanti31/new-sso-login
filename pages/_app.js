@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
             <Component {...pageProps} />
           </div>
         </div>
-        <div className="modal  absolute  w-full h-screen    top-0 left-0 right-0 bg-black-300 bg-red "></div>
+        {/* <div className="modal  absolute  w-full h-screen    top-0 left-0 right-0 bg-black-300 bg-red "></div> */}
         {router.pathname === "/" ? <LoginFooter /> : null}
       </PortalProvider>
     </AuthProvider>
