@@ -19,35 +19,35 @@ export const Sidebar = () => {
       <nav className="h-screen bg-white z-30">
         <a
           href="#"
-          className="flex text-md py-2.5 justify-between px-4 text-black  rounded transition duration-200 hover:bg-blue-700 border-gray-100  "
+          className="flex text-md py-2.5 justify-between px-4 text-black rounded-b-lg border-gray-300  rounded transition duration-200 hover:bg-blue-700 border-gray-100  "
         >
           <DocumentReportIcon className="text-sm h-8 m-auto ml-0 mr-4" />
           <span className="text-sm m-auto ml-0"> My Policies </span>
         </a>
         <a
           href=""
-          className="flex text-md justify-between py-2.5 px-4 text-black rounded transition duration-200 hover:bg-blue-700  hover:text-white border-gray-100  "
+          className="flex text-md justify-between py-2.5 px-4  rounded-b-lg border-gray-300  text-black rounded transition duration-200 hover:bg-blue-700  hover:text-white border-gray-100  "
         >
           <UserIcon className="text-sm h-8 m-auto ml-0 mr-4" />
           <span className="text-sm  m-auto ml-0"> MyProfile</span>
         </a>
         <a
           href=""
-          className="flex justify-between  text-md text-black py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700  border-gray-100 "
+          className="flex justify-between  text-md text-black py-2.5 px-4 rounded rounded-b-lg border-gray-300   transition duration-200 hover:bg-blue-700  border-gray-100 "
         >
           <DocumentTextIcon className="text-sm h-8 m-auto ml-0 mr-4" />
           <span className="text-sm  m-auto ml-0">Reports</span>
         </a>
         <a
           href=""
-          className="flex text-md text-black justify-between py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 border-gray-100  "
+          className="flex text-md text-black justify-between py-2.5 px-4 rounded rounded-b-lg border-gray-300   transition duration-200 hover:bg-blue-700 border-gray-100  "
         >
           <SupportIcon className="text-sm h-8 m-auto ml-0 mr-4" />
           <span className="text-sm   m-auto ml-0">Supports</span>
         </a>
         <a
           href=""
-          className="flex text-black text-md justify-between py-2.5 px-4 rounded transition duration-200 hover:bg-blue-700 border-gray-100  "
+          className="flex text-black text-md justify-between py-2.5 px-4 rounded  rounded-b-lg border-gray-300  transition duration-200 hover:bg-blue-700 border-gray-100  "
         >
           <LogoutIcon className="text-sm h-8 m-auto ml-0 mr-4" />
           <span className="text-sm  m-auto ml-0">Logout</span>
